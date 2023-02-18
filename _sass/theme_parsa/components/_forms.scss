@@ -1,27 +1,19 @@
-// 
+//
 // Forms
-// 
+//
 
-.form-floating {
+.form-control {
+  border: 0;
+  border-bottom: 1px solid #ababab;
+  border-radius: 0;
+}
 
-    input.form-control,
-    textarea.form-control {
-        font-size: 1.5rem;
-        border-left: 0;
-        border-right: 0;
-        border-top: 0;
-        border-radius: 0;
-        border-width: 1px;
+.form-control:focus {
+  outline: 0;
+  box-shadow: none;
+  border-color: #ff6f00;
+}
 
-        &:focus {
-            box-shadow: none;
-        }
-
-    }
-
-    label {
-        font-size: 1.5rem;
-        color: $gray-600;
-    }
-
+textarea.form-control {
+  height: 150px;
 }

@@ -30,6 +30,7 @@ $theme: "Parsa" !default;
 // Variables
 // -----------------------------------------------------------------------------
 // @import "./theme_parsa/variables";
+@import "./theme_parsa/variables/colors";
 
 // BS source
 // -----------------------------------------------------------------------------
@@ -47,11 +48,15 @@ $theme: "Parsa" !default;
 
 // Components
 // -----------------------------------------------------------------------------
-// @import "./theme_parsa/components/anchors.scss";
-// @import "./theme_parsa/components/buttons.scss";
-// @import "./theme_parsa/components/divider.scss";
-// @import "./theme_parsa/components/forms.scss";
-// @import "./theme_parsa/components/navbar.scss";
+@import "./theme_parsa/components/anchors.scss";
+@import "./theme_parsa/components/buttons.scss";
+@import "./theme_parsa/components/forms.scss";
+@import "./theme_parsa/components/headroom.scss";
+@import "./theme_parsa/components/instagram.scss";
+@import "./theme_parsa/components/navbar.scss";
+@import "./theme_parsa/components/overlay.scss";
+@import "./theme_parsa/components/preloader.scss";
+@import "./theme_parsa/components/slick.scss";
 
 // Theme CSS sections
 // -----------------------------------------------------------------------------

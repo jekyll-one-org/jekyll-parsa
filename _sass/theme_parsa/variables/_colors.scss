@@ -1,15 +1,43 @@
-// 
+//
 // Colors
-// 
+//
 
-//- Override and add to color system
-$teal: #1abc9c;
-$dark-blue: #2c3e50;
+.bg-primary {
+  background: #ff6f00 !important;
+}
 
-//- Override primary color
-$primary: $teal;
-$secondary: $dark-blue;
+.bg-secondary {
+  background: #fdefe6 !important;
+}
 
-// The contrast ratio to reach against white, to determine if color changes from "light" to "dark". Acceptable values for WCAG 2.0 are 3, 4.5 and 7.
-// See https://www.w3.org/TR/WCAG20/#visual-audio-contrast-contrast
-$min-contrast-ratio: 2.4;
+.text-primary {
+  color: #ff6f00 !important;
+}
+
+.text-color {
+  color: #585757;
+}
+
+.text-dark {
+  color: #000000 !important;
+}
+
+.font-secondary {
+  font-family: "hanskendrick" !important;
+}
+
+.border-primary {
+  border-color: #ababab !important;
+}
+
+
+
+::-moz-selection {
+  background: #ff8c33;
+  color: #fff;
+}
+
+::selection {
+  background: #ff8c33;
+  color: #fff;
+}
