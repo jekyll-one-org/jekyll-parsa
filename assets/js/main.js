@@ -1,7 +1,25 @@
+/*
+ # -----------------------------------------------------------------------------
+ # ~/assets/js/main.js
+ # Initialize JS Plugins for the project
+ #
+ #  Product/Info:
+ #  http://jekyll.one
+ #
+ #  Copyright (C) 2023 Juergen Adams
+ #  Copyright (C) 2016 Present, Themefisher
+ #
+ #  J1 Theme is licensed under MIT License.
+ #  See: https://github.com/jekyll-one/J1 Theme/blob/master/LICENSE
+ #  Theme Parsa is licensed under the MIT License.
+ #  See: https://github.com/themefisher/parsa-jekyll/blob/main/LICENSE
+ # -----------------------------------------------------------------------------
+*/
+
 (function ($) {
   'use strict';
 
-  // Preloader js    
+  // Preloader js
   $(window).on('load', function () {
     $('.preloader').fadeOut(700);
   });
@@ -51,7 +69,6 @@
       columnWidth: 1
     });
   });
-
 
   // instafeed
   if (($('#instafeed').length) !== 0) {
@@ -108,6 +125,5 @@
       remoteTarget: _this.attr('data-target')
     });
   });
-
 
 })(jQuery);
