@@ -116,7 +116,6 @@
 
   // article reading time
   $('article').each(function () {
-
     let _this = $(this);
 
     _this.readingTime({
@@ -124,6 +123,7 @@
       remotePath: _this.attr('data-file'),
       remoteTarget: _this.attr('data-target')
     });
+
   });
 
 })(jQuery);
