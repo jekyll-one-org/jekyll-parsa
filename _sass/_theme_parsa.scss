@@ -30,7 +30,6 @@ $theme: "Parsa" !default;
 // Variables
 // -----------------------------------------------------------------------------
 // @import "./theme_parsa/variables";
-@import "./theme_parsa/variables/colors";
 
 // BS source
 // -----------------------------------------------------------------------------
@@ -41,6 +40,7 @@ $theme: "Parsa" !default;
 // =============================================================================
 
 @import "./theme_parsa/styles.scss";
+@import "./theme_parsa/colors";
 
 // Theme CSS globals
 // -----------------------------------------------------------------------------
@@ -49,6 +49,7 @@ $theme: "Parsa" !default;
 // Components
 // -----------------------------------------------------------------------------
 @import "./theme_parsa/components/anchors.scss";
+@import "./theme_parsa/components/blog.scss";
 @import "./theme_parsa/components/buttons.scss";
 @import "./theme_parsa/components/forms.scss";
 @import "./theme_parsa/components/headroom.scss";
