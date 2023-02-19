@@ -1,6 +1,6 @@
 # Parsa Jekyll
 
-jekyll Parsa Creative blog Template ported from [Parsa HTML Template](https://themefisher.com/products/parsa)
+Jekyll Parsa Creative Blog Template ported from [Parsa HTML Template](https://themefisher.com/products/parsa)
 
 ## Setup
 
