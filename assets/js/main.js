@@ -129,7 +129,7 @@
   // Scroll Top
   $(function() {
     $(window).scroll(function () {
-      if ($(this).scrollTop() > 400) {
+      if ($(this).scrollTop() > 80) {
         $(".scrollup").fadeIn();
       } else {
         $(".scrollup").fadeOut();

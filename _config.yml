@@ -149,12 +149,9 @@ paginate_path:                          "/page/:num"
 # Pages Path
 defaults:
   - scope:
-      path:                             "_pages"
+      path:                             "pages"
     values:
       permalink:                        /:basename:output_ext
-
-include:
-  - _pages
 
 # Tags
 tag_page_dir:                           tag
