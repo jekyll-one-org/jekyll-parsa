@@ -1,10 +1,12 @@
 ---
 layout:                                 post
-title:                                  Charming Evening Field
-# date:                                 2019-05-14 15:46:10 +03:00
+
+title:                                  Organize Your Life With 5 Simple rules
+tagline:                                Modern Living
 description:                            This is meta description
-image:                                  assets/images/masonary-post/post-6.jpg
-categories:                             [ Food ]
+featured:                               true
+image:                                  assets/images/featured-post/post-3.jpg
+categories:                             [ Fashion ]  
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et

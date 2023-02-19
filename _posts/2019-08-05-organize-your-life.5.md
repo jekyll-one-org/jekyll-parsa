@@ -1,12 +1,14 @@
 ---
 layout:                                 post
-title:                                  Organize Your Life With 10 Simple rule
-# date:                                 2019-04-14 14:46:10 +03:00
+
+title:                                  Organize Your Life With 5 Simple rules
+tagline:                                Modern Living
 description:                            This is meta description
 featured:                               true
-image:                                  assets/images/featured-post/post-2.jpg
-categories:                             [ Philosophy ]
+image:                                  assets/images/featured-post/post-5.jpg
+categories:                             [ Nature ]
 ---
+
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
 dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex

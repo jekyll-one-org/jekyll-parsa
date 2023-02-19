@@ -1,11 +1,11 @@
 ---
 layout:                                 post
-title:                                  Organize Your Life With 10 Simple rule
-# date:                                 2019-04-14 15:46:10 +03:00
+
+title:                                  Food Example 2
+tagline:                                Natural Food
 description:                            This is meta description
-featured:                               true
-image:                                  assets/images/featured-post/post-1.jpg
-categories:                             [ Lifestyle ]
+image:                                  assets/images/masonary-post/post-3.jpg
+categories:                             [ Food ]
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et

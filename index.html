@@ -24,7 +24,7 @@ layout: default
               <a class="d-block mb-3 text-white text-uppercase" href="{{ 'category/' | relative_url }}{{ category | slugify }}">{{ category }}</a>
               {% endfor %}
               <h4 class="card-title mb-4"><a class="text-white" href="{{ post.url | relative_url }}">{{post.title}}</a></h4>
-              <a class="btn btn-outline-light" href="{{ post.url | relative_url }}">read more</a>
+              <a class="btn btn-outline-light" href="{{ post.url | relative_url }}">read &nbsp;&nbsp;&middot;&nbsp;{{post.tagline}}</a>
             </div>
           </div>
         </article>
@@ -56,7 +56,7 @@ layout: default
           {% endfor %}
           <h4 class="title-border"><a class="text-dark" href="{{ post.url | prepend: site.baseurl }}">{{post.title}}</a></h4>
           <p>{{ post.content | strip_html | truncatewords: 35 }}</p>
-          <a href="{{ post.url | prepend: site.baseurl }}" class="btn btn-transparent">read more</a>
+          <a href="{{ post.url | prepend: site.baseurl }}" class="btn btn-default">read &nbsp;&nbsp;&middot;&nbsp;{{post.tagline}}</a>
         </article>
       </div>
 			{% endfor %}

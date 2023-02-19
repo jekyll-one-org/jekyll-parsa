@@ -1,9 +1,10 @@
 ---
 layout:                                 post
-title:                                  Charming Evening Field
-# date:                                 2019-05-14 17:46:10 +03:00
+
+title:                                  Food Example 12
+tagline:                                Natural Food
 description:                            This is meta description
-image:                                  assets/images/masonary-post/post-4.jpg
+image:                                  assets/images/masonary-post/post-13.jpg
 categories:                             [ Food ]
 ---
 
