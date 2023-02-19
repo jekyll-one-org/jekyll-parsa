@@ -1,0 +1,22 @@
+<!-- hero area -->
+<section class="hero-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 align-self-end">
+        <h1 class="mb-0">Welcome</h1>
+        <h2 class="mb-100 title-border-lg">to <i>{{site.author.name}} Blog</i></h2>
+        <p class="mb-80 mr-5">{{site.hero.hero-subtitle}}</p>
+        <span class="font-secondary text-dark mr-3 mr-sm-5">Follow</span>
+        <ul class="list-inline d-inline-block mb-5">
+          {% for social in site.social %}
+          <li class="list-inline-item mx-3"><a href="{{ social.link }}" class="text-dark"><i class="{{ social.icon }}"></i></a></li>
+          {% endfor %}
+        </ul>
+      </div>
+      <div class="col-lg-6 text-right">
+        <img class="img-fluid" src="{{site.hero.hero-banner | relative_url }}" alt="banner-image">
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /hero area -->

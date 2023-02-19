@@ -63,7 +63,7 @@
   });
 
   // Masonry
-  $(document).ready(function () {
+  $(function() {
     $('.masonry-container').masonry({
       itemSelector: '.masonry-container > div',
       columnWidth: 1
@@ -124,6 +124,24 @@
       remoteTarget: _this.attr('data-target')
     });
 
+  });
+
+  // Scroll Top
+  $(function() {
+    $(window).scroll(function () {
+      if ($(this).scrollTop() > 400) {
+        $(".scrollup").fadeIn();
+      } else {
+        $(".scrollup").fadeOut();
+      }
+    })
+
+    $(".scrollup").click(function () {
+      $("html, body").animate({
+        scrollTop: 0
+      }, 600);
+      return false;
+    })
   });
 
 })(jQuery);

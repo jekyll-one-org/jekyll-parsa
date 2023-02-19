@@ -1,10 +1,38 @@
 ---
-layout: default
+layout:                                 default
+title:                                  Welcome
+tagline:                                Jhon Abraham Blog
+description: >
+                                        I’m a Freelance Interactive Art Director based in France.
+                                        Focusing across branding and identity, digital and print.
 ---
 
+<!-- dividers -->
+<div class="dividers">
+  <div class="divider"></div>
+  <div class="divider"></div>
+  <div class="divider"></div>
+  <div class="divider"></div>
+</div>
+
+<!-- Master header -->
+{% include templates/masthead.html %}
+
 {% if site.layout_home_page == true %}
+
+<!-- featured posts -->
 {% if site.featured-post-slider == true %}
-<!-- featured post -->
+
+<section id="featured-posts" class="section-sm">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <h3 class="text-center">Featured Posts</h3>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section>
   <div class="container-fluid p-sm-0">
     <div class="row featured-post-slider">
@@ -34,10 +62,20 @@ layout: default
     </div>
   </div>
 </section>
-<!-- /featured post -->
 {% endif %}
+<!-- /featured posts -->
 
-<!-- blog post -->
+<!-- all posts -->
+<section id="all-posts" class="section-sm mt-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <h3 class="text-center">All Posts</h3>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section class="section">
   <div class="container">
     <div class="row masonry-container">
@@ -62,12 +100,12 @@ layout: default
 			{% endfor %}
 			{% endif %}
     </div>
-    {% include pagination.html %}
+    {% include templates/pagination.html %}
   </div>
 </section>
-<!-- /blog post -->
+<!-- /all posts -->
 
-{% include instagram.html %}
+{% include templates/instagram.html %}
 
 {% else %}
 
@@ -79,28 +117,8 @@ layout: default
   <div class="divider"></div>
 </div>
 
-<!-- hero area -->
-<section class="hero-section">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-6 align-self-end">
-        <h1 class="mb-0">Welcome</h1>
-        <h2 class="mb-100 title-border-lg">to <i>{{site.author.name}} Blog</i></h2>
-        <p class="mb-80 mr-5">{{site.hero.hero-subtitle}}</p>
-        <span class="font-secondary text-dark mr-3 mr-sm-5">Follow</span>
-        <ul class="list-inline d-inline-block mb-5">
-          {% for social in site.social %}
-          <li class="list-inline-item mx-3"><a href="{{ social.link }}" class="text-dark"><i class="{{ social.icon }}"></i></a></li>
-          {% endfor %}
-        </ul>
-      </div>
-      <div class="col-lg-6 text-right">
-        <img class="img-fluid" src="{{site.hero.hero-banner | relative_url }}" alt="banner-image">
-      </div>
-    </div>
-  </div>
-</section>
-<!-- /hero area -->
+<!-- Master header -->
+{% include templates/masthead.html %}
 
 <!-- blog post -->
 <section class="section">
@@ -133,11 +151,16 @@ layout: default
       {% endfor %}
 			{% endif %}
     </div>
-    {% include pagination.html %}
+    {% include templates/pagination.html %}
   </div>
 </section>
 <!-- /blog post -->
 
-{% include instagram.html %}
+{% include tenplates/instagram.html %}
 
 {% endif %}
+
+<!-- Scroll up button -->
+<a href="" class="scrollup" aria-label="Scroll Up">
+  <img src="/assets/images/up.svg" alt="scroll-up">
+</a>

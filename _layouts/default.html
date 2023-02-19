@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 
-{% include head.html %}
+{% include static/head.html %}
 
 <body>
   {% if site.google-analytics %}
-    {% include google-analytics.html %}
+    {% include static/google-analytics.html %}
   {% endif %}
 
   {% if site.preloader == true %}
@@ -23,13 +23,21 @@
   <!-- /preloader -->
   {% endif %}
 
-  {% include header.html %}
+
+  <div class="dividers">
+    <div class="divider"></div>
+    <div class="divider"></div>
+    <div class="divider"></div>
+    <div class="divider"></div>
+  </div>
+
+  {% include templates/header.html %}
 
     {{ content }}
 
-  {% include footer.html %}
+  {% include templates/footer.html %}
 
-  <!-- Plugin JS needed for the project -->
+  <!-- Plugin JS needed for the template -->
   <!-- ------------------------------------------------------------------------- -->
 
   <!-- jQuery -->
@@ -38,25 +46,25 @@
   <!-- Bootstrap JS -->
   <script src="{{ site.baseurl }}/assets/plugins/bootstrap/bootstrap.min.js"></script>
 
-  <!-- slick slider -->
+  <!-- Slick slider -->
   <script src="{{ site.baseurl }}/assets/plugins/slick/slick.min.js"></script>
 
-  <!-- masonry -->
+  <!-- Masonry -->
   <script src="{{ site.baseurl }}/assets/plugins/masonry/masonry.js"></script>
 
-  <!-- instafeed -->
+  <!-- Instafeed -->
   <script src="{{ site.baseurl }}/assets/plugins/instafeed/instafeed.min.js"></script>
 
-  <!-- headroom -->
+  <!-- Headroom -->
   <script src="{{ site.baseurl }}/assets/plugins/headroom/headroom.js"></script>
 
-  <!-- reading time -->
+  <!-- Reading time -->
   <script src="{{ site.baseurl }}/assets/plugins/reading-time/readingTime.min.js"></script>
 
-  <!-- lunr.js -->
+  <!-- Lunr -->
   <script src="{{ site.baseurl }}/assets/plugins/search/lunr.min.js"></script>
 
-  <!-- search -->
+  <!-- Search -->
   <script src="{{ site.baseurl }}/assets/plugins/search/search.js"></script>
 
   <!-- Main JS Script -->
