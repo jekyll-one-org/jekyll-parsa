@@ -1,6 +1,6 @@
 # Parsa Jekyll
 
-Parsa jekyll Creative blog Template ported from [Parsa HTML Template](https://themefisher.com/products/parsa)
+jekyll Parsa Creative blog Template ported from [Parsa HTML Template](https://themefisher.com/products/parsa)
 
 ## Setup
 
@@ -13,7 +13,7 @@ for the site to propagate entirely.
 
 ## Customize
 
-Things you can customize in `_data/settings.yml` (no HTML/CSS):
+Things you can customize in the site config file `_config.yml` (no HTML/CSS):
 
 - Theme General Settings ( name, logo, email, phone, address )
 - Hero Section
@@ -37,27 +37,11 @@ I would recommend checking the
 [Deployment Methods](https://jekyllrb.com/docs/deployment-methods/)
 page on Jekyll website.
 
-## Reporting Issues
-
-We use GitHub Issues as the official bug tracker for the **Parsa Theme**.
-Please Search [existing issues](https://github.com/themefisher/parsa-jekyll/issues).
-It’s possible someone has already reported the same problem. If your problem
-or idea is not addressed yet,
-[open a new issue](https://github.com/themefisher/parsa-jekyll/issues/new)
-
-## Technical Support or Questions
-
-If you have questions or need help integrating the product please
-[contact us](mailto:themefisher@gmail.com) instead of opening an issue.
-
 <!-- licence -->
-## License
+## Licenses
 
-Copyright (c) 2016 - Present, Designed & Developed by
-[Themefisher](https://themefisher.com)
-
-**Code License:** Released under the
+Copyright (C) 2016 &nbsp;&nbsp;&middot;&nbsp; [Themefisher](https://themefisher.com), Released under the
 [MIT](https://github.com/themefisher/parsa-jekyll/blob/main/LICENSE) license.
-
-**Image license:** The images are only for demonstration purposes.
-They have their license, we don't have permission to share those images.
+<br />
+Copyright (C) 2023 &nbsp;&nbsp;&middot;&nbsp; [JekyllOne](https://jekyll.one), Released under the
+[MIT](https://github.com/jekyll-one-org/j1-template/blob/main/LICENSE.md) license.
