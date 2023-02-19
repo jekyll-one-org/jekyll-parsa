@@ -23,6 +23,7 @@ baseurl:                                ''
 
 # The base hostname & protocol for your site, e.g. http://example.com
 #
+# url:                                  http://localhost:25000
 url:                                    https://jekyll-parsa.netlify.app/
 
 title:                                  Parsa | Portfolio Jekyll Template
