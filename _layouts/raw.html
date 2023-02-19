@@ -4,9 +4,6 @@
 {% include static/head.html %}
 
 <body>
-  {% if site.google-analytics %}
-    {% include static/google-analytics.html %}
-  {% endif %}
 
   {% if site.preloader == true %}
   <!-- preloader -->
@@ -23,7 +20,6 @@
   <!-- /preloader -->
   {% endif %}
 
-
   <div class="dividers">
     <div class="divider"></div>
     <div class="divider"></div>
@@ -34,8 +30,6 @@
   {% include templates/header.html %}
 
   {{ content }}
-
-  {% include templates/footer.html %}
 
   <!-- Plugin JS needed for the template -->
 
