@@ -4,7 +4,7 @@ layout:                                 page
 title:                                  About Me
 tagline:                                Hello, I’m Jhon Abraham
 permalink:                              /about/
-# image:                                /assets/images/pages/author.jpg
+# image:                                /assets/images/parsa/pages/author.jpg
 ---
 
 Creative UI/UX desinger like me love to craft beautiful that satisfy users needs the product. A best idea generate for the agency complay smart and elegant design When, while the lovely valley teems with vapour around me, and the meridian sun strikes the upper surface of the impenetrable foliage of my trees, and but a few stray gleams steal into the inner sanctuary, I throw myself down among the tall grass by the trickling stream; and, as I lie close to the earth, a thousand unknown plants are noticed by me.

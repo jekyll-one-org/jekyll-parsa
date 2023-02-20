@@ -24,6 +24,7 @@ permalink:                              pretty
 # The base hostname & protocol for your site, e.g. http://example.com
 #
 url:                                    https://jekyll-parsa.netlify.app/
+# url:                                  http://localhost:25000
 
 # The subpath of your site, e.g. /blog
 #
@@ -334,7 +335,7 @@ defaults:
         size:                           5x
 
       images:
-        dir:                            /assets/images/pages
+        dir:                            /assets/images/parsa/pages
 
       robots:
         index:                          true
