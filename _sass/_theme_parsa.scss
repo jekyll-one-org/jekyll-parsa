@@ -29,16 +29,14 @@ $theme: "Parsa" !default;
 
 // Variables
 // -----------------------------------------------------------------------------
-// @import "./theme_parsa/variables";
+@import "./theme_parsa/variables";
 
 // BS source
 // -----------------------------------------------------------------------------
-//@import "~bootstrap/scss/bootstrap";
 @import "../node_modules/bootstrap/scss/bootstrap";
 
 // BS|Theme overrides goes here
 // =============================================================================
-
 @import "./theme_parsa/styles.scss";
 @import "./theme_parsa/colors";
 
@@ -63,4 +61,4 @@ $theme: "Parsa" !default;
 // -----------------------------------------------------------------------------
 // @import "./theme_parsa/sections/footer.scss";
 @import "./theme_parsa/sections/masthead.scss";
-// @import "./theme_parsa/sections/portfolio.scss";
+@import "./theme_parsa/sections/portfolio.scss";
