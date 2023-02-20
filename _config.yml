@@ -204,28 +204,30 @@ plugins:
 # ------------------------------------------------------------------------------
 # Paginator V1 configuration
 #
-paginate:                               10
-paginate_path:                          "/page/:num"
+paginate:                               6
+paginate_path:                          /page/:num
 
 # Pages Path
+#
 defaults:
   - scope:
-      path:                             "pages"
+      path:                             pages
     values:
       permalink:                        /:basename:output_ext
 
-
-# Tags
-tag_page_dir:                           tag
-tag_page_layout:                        tag_page
-tag_permalink_style:                    pretty
-
 # Categories
+#
 jekyll-archives:
   enabled:                              all
   layout:                               category
   permalinks:
-    category:                           "/category/:name/"
+    category:                           /category/:name/
+
+# Tags
+#
+# tag_page_dir:                           tag
+# tag_page_layout:                        tag_page
+# tag_permalink_style:                    pretty
 
 # ------------------------------------------------------------------------------
 # FILES configuration

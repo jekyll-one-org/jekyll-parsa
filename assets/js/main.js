@@ -144,4 +144,26 @@
     })
   });
 
+
+  // initialize event handler for window/history/back on <ESC>
+  //
+  window.onkeyup = function (event) {
+    if (event.keyCode == 27) window.history.back();
+  };
+  
+  // --------------------------------------------------------------------
+  // Register event 'reset on resize' to call j1.core.navigator on
+  // manageDropdownMenu to manage the (current) NAV menu for
+  // desktop or mobile
+  // ---------------------------------------------------------------------
+  $(window).on('resize', function() {
+
+    // Scroll the page one pixel back and forth to get
+    // the right position for the toccer
+    $(window).scrollTop($(window).scrollTop()+1);
+    $(window).scrollTop($(window).scrollTop()-1);
+
+    $('.masonry-container').masonry('reloadItems')
+  });
+
 })(jQuery);

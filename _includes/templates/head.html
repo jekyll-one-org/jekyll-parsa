@@ -1,19 +1,17 @@
 <head>
 
 <!-- META tags -->
-<!-- ------------------------------------------------------------------------- -->
 <meta charset="utf-8">
-<title>{% if page.title %}{{ page.title }} | {{ page.tagline }}{% else %}{{ site.title }} | {{ site.tagline }}{% endif %}</title>
+<title>{% if page.title %}{{ page.title }} {% if page.tagline %}| {{ page.tagline }}{% endif %} {% else %}{{ site.title }} | {{ site.tagline }}{% endif %}</title>
 
 <!-- Mobile responsive meta -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!-- theme meta -->
+<!-- Theme META -->
 <meta name="theme-name" content="jekyll-parsa" />
 <meta name="description" content="Parsa is an expedite, cozy, gorgeous responsive personal blog template. It’s crafted with well-planned attention for a personal blog site."  />
 
 <!-- Plugin CSS needed for the template -->
-<!-- ------------------------------------------------------------------------- -->
 
 <!-- Bootstrap -->
 <!-- link rel="stylesheet" href="{{ site.baseurl }}/assets/plugins/bootstrap/bootstrap.min.css" -->
