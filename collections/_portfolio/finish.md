@@ -4,7 +4,7 @@ layout:                                 portfolio
 title:                                  Finish
 category:                               Identity
 
-image:                                  assets/images/parsa/img/portfolio/3.jpg
+image:                                  /assets/images/parsa/img/portfolio/3.jpg
 
 comments:                               false
 sitemap:                                false

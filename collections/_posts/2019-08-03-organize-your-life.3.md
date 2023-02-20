@@ -5,7 +5,7 @@ title:                                  Organize Your Life With 5 Simple rules
 tagline:                                Modern Living
 description:                            This is meta description
 featured:                               true
-image:                                  assets/images/featured-post/post-3.jpg
+image:                                  /assets/images/featured-post/post-3.jpg
 categories:                             [ Fashion ]  
 ---
 

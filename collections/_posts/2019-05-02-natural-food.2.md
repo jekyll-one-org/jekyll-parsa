@@ -4,7 +4,7 @@ layout:                                 post
 title:                                  Food Example 2
 tagline:                                Natural Food
 description:                            This is meta description
-image:                                  assets/images/masonary-post/post-3.jpg
+image:                                  /assets/images/masonary-post/post-3.jpg
 categories:                             [ Food ]
 ---
 

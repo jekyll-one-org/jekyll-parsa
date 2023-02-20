@@ -4,7 +4,7 @@ layout:                                 portfolio
 title:                                  Window
 category:                               Photography
 
-image:                                  assets/images/parsa/img/portfolio/6.jpg
+image:                                  /assets/images/parsa/img/portfolio/6.jpg
 
 comments:                               false
 sitemap:                                false

@@ -4,7 +4,7 @@ layout:                                 portfolio
 title:                                  Explore
 category:                               Graphic Design
 
-image:                                  assets/images/parsa/img/portfolio/2.jpg
+image:                                  /assets/images/parsa/img/portfolio/2.jpg
 
 comments:                               false
 sitemap:                                false

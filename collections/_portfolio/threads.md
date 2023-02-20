@@ -4,7 +4,7 @@ layout:                                 portfolio
 title:                                  Threads
 category:                               Illustration
 
-image:                                  assets/images/parsa/img/portfolio/1.jpg
+image:                                  /assets/images/parsa/img/portfolio/1.jpg
 
 comments:                               false
 sitemap:                                false
