@@ -30,7 +30,7 @@ description: >
   <div class="container">
     <div class="row">
       <div class="col-lg-12">
-        <h3 class="text-center">Featured Posts</h3>
+        <h2 class="text-center">Featured Posts</h2>
       </div>
     </div>
   </div>
@@ -73,7 +73,7 @@ description: >
   <div class="container">
     <div class="row">
       <div class="col-lg-12">
-        <h3 class="text-center">All Posts</h3>
+        <h2 class="text-center">All Posts</h2>
       </div>
     </div>
   </div>
@@ -97,7 +97,7 @@ description: >
           {% endfor %}
           <h4 class="title-border"><a class="text-dark" href="{{ post.url | prepend: site.baseurl }}">{{post.title}}</a></h4>
           <p>{{ post.content | strip_html | truncatewords: 35 }}</p>
-          <a href="{{ post.url | prepend: site.baseurl }}" class="btn btn-default">read &nbsp;&nbsp;&middot;&nbsp;{{post.tagline}}</a>
+          <a href="{{ post.url | prepend: site.baseurl }}" class="btn btn-outline">read &nbsp;&nbsp;&middot;&nbsp;{{post.tagline}}</a>
         </article>
       </div>
 			{% endfor %}
@@ -147,7 +147,7 @@ description: >
             </ul>
             <h4 class="mb-4"><a href="{{ post.url | prepend: site.baseurl }}" class="text-dark">{{post.title}}</a></h4>
             <p class="mb-0 post-summary">{{ post.content | strip_html | truncatewords: 35 }}</p>
-            <a class="btn btn-transparent mb-4" href="{{ post.url | prepend: site.baseurl }}">Continue...</a>
+            <a class="btn btn-outline mb-4" href="{{ post.url | prepend: site.baseurl }}">Continue...</a>
           </div>
         </article>
       </div>

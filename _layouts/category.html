@@ -31,7 +31,7 @@ layout:                                 default
               {% endfor %}
               <h4 class="title-border"><a class="text-dark" href="{{ post.url | relative_url }}">{{post.title}}</a></h4>
               <p>{{ post.content | strip_html | truncatewords: 35 }}</p>
-              <a href="{{ post.url | relative_url }}" class="btn btn-transparent mb-4">read &nbsp;&nbsp;&middot;&nbsp;{{post.tagline}}</a>
+              <a href="{{ post.url | relative_url }}" class="btn btn-outline mb-4">read &nbsp;&nbsp;&middot;&nbsp;{{post.tagline}}</a>
             </article>
           </div>
           {% endfor %}
