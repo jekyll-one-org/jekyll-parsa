@@ -77,7 +77,7 @@ hero:
   hero-subtitle: >
                                         I’m a Freelance Interactive Art Director based in France.
                                         Focusing across branding and identity, digital and print.
-  hero-banner:                          /assets/images/banner-img.png           # Add your banner image
+  hero-banner:                          /assets/images/parsa/masthead/banner-img.png           # Add your banner image
 
 #-------------------------------------------------------------------------------
 # Author Settings

@@ -139,7 +139,7 @@
     $(".scrollup").click(function () {
       $("html, body").animate({
         scrollTop: 0
-      }, 600);
+      }, 300);
       return false;
     })
   });
@@ -150,7 +150,7 @@
   window.onkeyup = function (event) {
     if (event.keyCode == 27) window.history.back();
   };
-  
+
   // --------------------------------------------------------------------
   // Register event 'reset on resize' to call j1.core.navigator on
   // manageDropdownMenu to manage the (current) NAV menu for

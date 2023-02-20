@@ -5,7 +5,7 @@ title:                                  Organize Your Life With 5 Simple rules
 tagline:                                Modern Living
 description:                            This is meta description
 featured:                               true
-image:                                  /assets/images/featured-post/post-5.jpg
+image:                                  /assets/images/parsa/featured-post/post-5.jpg
 categories:                             [ Nature ]
 ---
 
@@ -36,7 +36,7 @@ labore et dolore magnam aliquam quaerat voluptatem.
 labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
 aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
 
-![]({{site.baseurl}}/assets/images/post-img.jpg)
+![]({{site.baseurl}}/assets/images/posts/post-img.jpg)
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
 dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex

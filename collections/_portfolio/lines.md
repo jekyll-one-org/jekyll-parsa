@@ -4,7 +4,7 @@ layout:                                 portfolio
 title:                                  Lines
 category:                               Branding
 
-image:                                  /assets/images/parsa/img/portfolio/4.jpg
+image:                                  /assets/images/parsa/portfolio/4.jpg
 
 comments:                               false
 sitemap:                                false

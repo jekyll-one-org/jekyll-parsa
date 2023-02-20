@@ -4,7 +4,7 @@ layout:                                 portfolio
 title:                                  Southwest
 category:                               Website Design
 
-image:                                  /assets/images/parsa/img/portfolio/5.jpg
+image:                                  /assets/images/parsa/portfolio/5.jpg
 
 comments:                               false
 sitemap:                                false
