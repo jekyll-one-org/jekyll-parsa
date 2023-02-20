@@ -77,8 +77,8 @@ collections_dir:                        collections
 #
 # ------------------------------------------------------------------------------
 #
-title:                                  Parsa | Portfolio Jekyll Template
-logo:                                   /assets/images/logo.png                 # You can add own logo
+title:                                  Parsa | Jekyll Portfolio Template
+logo:                                   /assets/images/logo/logo.svg            # You can add own logo
 description:                                                                    # Add your awesome description
 copyright:  >
                                         Copyright 2023, All right reserved &nbsp;&nbsp;&middot;&nbsp; Designed by [Themefisher](https://themefisher.com)

@@ -3,7 +3,7 @@
 <!-- META tags -->
 <!-- ------------------------------------------------------------------------- -->
 <meta charset="utf-8">
-<title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+<title>{% if page.title %}{{ page.title }} | {{ page.tagline }}{% else %}{{ site.title }} | {{ site.tagline }}{% endif %}</title>
 
 <!-- Mobile responsive meta -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -28,8 +28,8 @@
 <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/parsa/bootstrap.css">
 
 <!-- Favicon -->
-<link rel="shortcut icon" href="{{ site.baseurl }}/assets/images/favicon.ico" type="image/x-icon">
-<link rel="icon" href="{{ site.baseurl }}/assets/images/favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="{{ site.baseurl }}/assets/images/logo/favicon.ico" type="image/x-icon">
+<link rel="icon" href="{{ site.baseurl }}/assets/images/logo/favicon.ico" type="image/x-icon">
 
 <!-- Jekyll SEO -->
 {% seo %}
