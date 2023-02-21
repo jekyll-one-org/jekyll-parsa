@@ -97,8 +97,6 @@ preloader:                              true
 # ------------------------------------------------------------------------------
 #
 menu:
-  - name:                               Home
-    url:                                /
   - name:                               Portfolio
     url:                                /#portfolio
   - name:                               Featured
