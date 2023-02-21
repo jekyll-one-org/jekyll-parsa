@@ -104,10 +104,10 @@ menu:
     url:                                /#featured-posts
   - name:                               All Posts
     url:                                /#all-posts
-  - name:                               About
-    url:                                /about/
   - name:                               Contact
     url:                                /contact/
+  - name:                               About
+    url:                                /about/    
 
 # *** NOTE ***
 # You can add submenus. For example:
