@@ -23,8 +23,9 @@ permalink:                              pretty
 
 # The base hostname & protocol for your site, e.g. http://example.com
 #
-url:                                    https://jekyll-parsa.netlify.app/
 # url:                                  http://localhost:25000
+url:                                    https://jekyll-parsa.netlify.app/
+
 
 # The subpath of your site, e.g. /blog
 #
@@ -107,7 +108,7 @@ menu:
   - name:                               Contact
     url:                                /contact/
   - name:                               About
-    url:                                /about/    
+    url:                                /about/
 
 # *** NOTE ***
 # You can add submenus. For example:
@@ -136,9 +137,11 @@ featured-post-slider:                   true
 # Hero Section
 hero:
   hero-subtitle: >
-                                        I’m a Freelance Interactive Art Director based in France.
-                                        Focusing across branding and identity, digital and print.
-  hero-banner:                          /assets/images/parsa/masthead/banner-img.png           # Add your banner image
+                                        I’m a Freelance Art Director based in France.
+                                        Focusing across branding and identity, digital
+                                        and print.
+  # Add your banner image
+  hero-banner:                          /assets/images/parsa/masthead/banner-img.png
 
 #-------------------------------------------------------------------------------
 # Author Settings

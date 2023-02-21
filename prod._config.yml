@@ -14,20 +14,73 @@
 # See: https://github.com/jekyll-one-org/j1-template/blob/main/LICENSE.md
 # ------------------------------------------------------------------------------
 
-#-------------------------------------------------------------------------------
-# General Site Settings
-
-# The subpath of your site, e.g. /blog
+# ==============================================================================
+# 4. JEKYLL specific site configuration
 #
-baseurl:                                ''
+# ------------------------------------------------------------------------------
+#
+permalink:                              pretty
 
 # The base hostname & protocol for your site, e.g. http://example.com
 #
 # url:                                  http://localhost:25000
 url:                                    https://jekyll-parsa.netlify.app/
 
-title:                                  Parsa | Portfolio Jekyll Template
-logo:                                   /assets/images/logo/logo.svg                 # You can add own logo
+
+# The subpath of your site, e.g. /blog
+#
+baseurl:                                ''
+
+# The production_url is only used when full-domain names are needed
+# such as sitemap.txt. For most places will/should use base_path to
+# make the URLs.
+#
+base_path:                              ''
+
+# ------------------------------------------------------------------------------
+# Base hostname and protocol for the site
+#
+#  Defaults:
+#   protocol:                           http
+#   host:                               localhost
+#   port:                               4000
+#   timezone:                           Europe/Berlin
+#   encoding:                           UTF-8
+#
+protocol:                               http
+host:                                   localhost
+port:                                   25000
+timezone:                               Europe/Berlin
+encoding:                               UTF-8
+
+# detach:                               false
+# show_dir_listing:                     true
+
+
+# ------------------------------------------------------------------------------
+# PATH configuration
+# Global folder configuration where Jekyll will read files from
+#
+#  Defaults:
+#   source:                             .
+#   destination:                        _site
+#
+source:                                 .
+destination:                            _site
+plugins_dir:                            _plugins
+layouts_dir:                            _layouts
+data_dir:                               _data
+includes_dir:                           _includes
+collections_dir:                        collections
+
+
+# ==============================================================================
+# 3. SITE configuration
+#
+# ------------------------------------------------------------------------------
+#
+title:                                  Parsa | Jekyll Portfolio Template
+logo:                                   /assets/images/parsa/icons/logo.svg            # You can add own logo
 description:                                                                    # Add your awesome description
 copyright:  >
                                         Copyright 2023, All right reserved &nbsp;&nbsp;&middot;&nbsp; Designed by [Themefisher](https://themefisher.com)
@@ -35,18 +88,27 @@ copyright:  >
 
 # Preloader
 # To disable preloader change value to false
+# ------------------------------------------------------------------------------
 #
 preloader:                              true
 
+# Navigation
+# Nav menu entries
+# ------------------------------------------------------------------------------
+#
 menu:
   - name:                               Home
     url:                                /
+  - name:                               Portfolio
+    url:                                /#portfolio
+  - name:                               Featured
+    url:                                /#featured-posts
   - name:                               All Posts
     url:                                /#all-posts
-  - name:                               About
-    url:                                /about/
   - name:                               Contact
     url:                                /contact/
+  - name:                               About
+    url:                                /about/
 
 # *** NOTE ***
 # You can add submenus. For example:
@@ -75,9 +137,11 @@ featured-post-slider:                   true
 # Hero Section
 hero:
   hero-subtitle: >
-                                        I’m a Freelance Interactive Art Director based in France.
-                                        Focusing across branding and identity, digital and print.
-  hero-banner:                          /assets/images/parsa/masthead/banner-img.png           # Add your banner image
+                                        I’m a Freelance Art Director based in France.
+                                        Focusing across branding and identity, digital
+                                        and print.
+  # Add your banner image
+  hero-banner:                          /assets/images/parsa/masthead/banner-img.png
 
 #-------------------------------------------------------------------------------
 # Author Settings
@@ -103,10 +167,11 @@ contact-form:                           example@email.com
 # Social links
 #
 social:
-  - { icon: "ti-facebook", link: "#" }
-  - { icon: "ti-twitter-alt", link: "#" }
-  - { icon: "ti-linkedin", link: "#" }
-  - { icon: "ti-github", link: "#" }
+  - { icon: "ti-github", link: "https://github.com/jekyll-one/jekyll-parsa" }
+  - { icon: "ti-facebook", link: "https://www.facebook.com/" }
+  - { icon: "ti-twitter-alt", link: "https://twitter.com/home" }
+  - { icon: "ti-linkedin", link: "https://www.linkedin.com/" }
+
 
 #-------------------------------------------------------------------------------
 # Comment Section (Disqus)
@@ -130,7 +195,6 @@ google-analytics:
 
 #-------------------------------------------------------------------------------
 # Build settings
-permalink:                              pretty
 markdown:                               kramdown
 
 # ------------------------------------------------------------------------------
@@ -144,27 +208,30 @@ plugins:
 # ------------------------------------------------------------------------------
 # Paginator V1 configuration
 #
-paginate:                               10
-paginate_path:                          "/page/:num"
+paginate:                               6
+paginate_path:                          /page/:num
 
 # Pages Path
+#
 defaults:
   - scope:
-      path:                             "pages"
+      path:                             pages
     values:
       permalink:                        /:basename:output_ext
 
-# Tags
-tag_page_dir:                           tag
-tag_page_layout:                        tag_page
-tag_permalink_style:                    pretty
-
 # Categories
+#
 jekyll-archives:
   enabled:                              all
   layout:                               category
   permalinks:
-    category:                           "/category/:name/"
+    category:                           /category/:name/
+
+# Tags
+#
+# tag_page_dir:                           tag
+# tag_page_layout:                        tag_page
+# tag_permalink_style:                    pretty
 
 # ------------------------------------------------------------------------------
 # FILES configuration
@@ -192,3 +259,138 @@ sass:
   sass_dir:                             _sass
   style:                                expanded                                # nested | expanded | compact | compressed
 # verbose:                              true
+
+
+# ==============================================================================
+# 6. PAGE configuration
+#
+# ------------------------------------------------------------------------------
+#
+# ------------------------------------------------------------------------------
+# EXCERPT settings
+#
+excerpt_separator:                      excerpt__end
+excerpt_truncate_words:                 100
+
+# ------------------------------------------------------------------------------
+# COLLECTION settings
+# See: https://jekyllrb.com/docs/collections/#collections
+#
+collections:
+
+  # ----------------------------------------------------------------------------
+  # Agency
+  #
+  portfolio:
+    output: true
+
+# ------------------------------------------------------------------------------
+# FRONTMATTER defaults
+#
+# Using the YAML Front Matter is a way the (individual) configuration
+# for post and pages can be specified. Very often, a lot of config
+# options are repeated on each and every post or page. Setting the
+# layout for each file, adding categories to a post, etc. might be
+# the same for the majority of your content.
+#
+# Instead of repeating this configuration each time a page is being
+# created, Jekyll provides a way to set these configuration items
+# as defaults in this site configuration (_config.yml).
+#
+defaults:
+
+  # ----------------------------------------------------------------------------
+  # HTML partials (loaded via XHR) excluded from sitemap
+  #
+  - scope:
+      path:                             assets/data
+
+    values:
+      sitemap:                          false
+
+  # ----------------------------------------------------------------------------
+  # Module HTML docs and examples excluded from sitemap
+  #
+  - scope:
+      path:                             assets/themes/j1
+
+    values:
+      sitemap:                          false
+
+  # ----------------------------------------------------------------------------
+  # PAGES
+  #
+  - scope:
+      path:                             pages
+      type:                             pages
+
+    values:
+      layout:                           page
+      compress:                         true
+
+      author:
+        name:                           Juergen Adams
+        url:                            https://jekyll.one/
+
+      icons:
+        family:                         MDI
+        color:                          md-blue
+        size:                           5x
+
+      images:
+        dir:                            /assets/images/parsa/pages
+
+      robots:
+        index:                          true
+        follow:                         true
+
+      toc:                              true
+      fab_menu_id:                      page_ctrl
+      scrollbar:                        false
+      personalization:                  false
+      exclude_from_search:              false
+
+      youtube:                          true
+      vimeo:                            true
+
+      resource_options:
+        - toccer:
+            collapseDepth:              3
+
+  # ----------------------------------------------------------------------------
+  # POSTS
+  #
+
+  # ----------------------------------------------------------------------------
+  # PUBLIC - FEATURED
+  #
+  - scope:
+      path:                             posts
+      type:                             posts
+
+    values:
+      layout:                           post
+      compress:                         true
+
+      author:
+        name:                           Juergen Adams
+        url:                            https://jekyll.one/
+
+      robots:
+        index:                          true
+        follow:                         true
+
+      toc:                              true
+      fab_menu_id:                      open_toc_reload
+      scrollbar:                        false
+      page_navigation:                  true
+      personalization:                  false
+      exclude_from_search:              false
+      series:                           false
+
+      resource_options:
+        - toccer:
+            collapseDepth:              3
+
+# ------------------------------------------------------------------------------
+# END config
